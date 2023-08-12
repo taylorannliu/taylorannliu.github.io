@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Empath: Daily Reading App</title>
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/global.css" rel="stylesheet">
+        <link href="./css/project.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="projects.html" class="headingChild"><img src="./images/navbarHome.svg" width="250rem" alt="homeLogo"></a>
+            <nav class="navChild">      
+                <a href="about.html">About</a>
+                <a href="internships.html">Internships</a>
+                <a class="activeNav" href="projects.html">Projects</a>           
+            </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <button id="backToTop" onclick="scrollToTop()"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button>
+
+        <section id="banner" class="imageSpan">
+            <img src="./images/empath/banner1.jpg" alt="Empath: Daily Reading and Community" width="100%">
+        </section>
+
+        <section class="infoSection flexSection">
+            <div class="headingsDiv">
+                <p class="projectSubHeader">Interface Design Class | March-April 2023</p>
+                <h1>Research, UI, UX, Prototyping: Empath- Daily Reading and Community</h1>
+            </div>
+            <div class="infoDiv">
+                <p>Empath is a gamified daily app targeted towards seniors. Over the course of several weeks, my team researched, designed, prototyped, tested, and refined our app idea. In this page, will detail my contributions to this project.</p>
+                <h3>Collaborators:</h3>
+                <p>Shahvir Sarkary, Echo Chen</p>
+                <h3>Tools I used:</h3>
+                <p>Figma, Procreate, Protopie</p>
+                <h3>Skills:</h3>
+                <p>Research, Sketching, Wireframing, Prototyping</p>
+                <a href="https://cloud.protopie.io/p/6e1b20c9e74b56e475ceb419?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1&playerAppPopup=true" class="buttonSecondary">Try the Prototype</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>App Goals</h2>
+            <p>In our early research of our target demographic, senior adults, we discovered 2 problems that they suffer from:</p>
+            <div class="flexDiv">
+                <div class="blockItem">
+                    <p>1. Many seniors face loneliness due to factors like living alone and lack of work community</p>
+                </div>
+                <div class="blockItem">
+                    <p>2. Lack of intellectual stimulation leads to cognitive decline in old age</p>
+                </div>
+            </div>
+            <p>This led us to our design goal for this project:</p>
+            <p>We want to reduce cognitive decline in seniors by fostering intellectual stimulation and sense of community as part of their daily interactions</p>
+        </section>
+
+        <section>
+            <h2>Design Process</h2>
+            <p>After ideating and receiving feedback, we decided to achieve this goal through a daily reading app that stimulates brain activity and encourages community interaction. </p>
+            <p>We then decided to focus on 3 main principles to design our app around:</p>
+            <div class="flexDiv">
+                <div class="blockItem">
+                    <p>1. Make our app intuitive to seniors mental models</p>
+                </div>
+                <div class="blockItem">
+                    <p>2. Aid cognitive stimulation through helping users learn</p>
+                </div>
+                <div class="blockItem">
+                    <p>3. Cater to accessibility concerns: visual impairment, mobility impairment</p>
+                </div>
+            </div>
+            <p>Some of these principles play directly into our style guidelines which I created before designing any screens. Our focus was to make the text readable, meaning the smallest font size we utilize is 16pt. Another focus was our very large action buttons, which are forgiving to users with lessened dexterity and mobility</p>
+            <figure>
+                <img src="./images/empath/styleGuide.png" width="100%" alt="image of style specifications">
+                <figcaption>Style guide, created by me in Figma</figcaption>
+            </figure>
+            <p>With this user guide, we then designed screens in Figma, based on every point of this rough interaction architecture I created of our app</p>
+            <img src="./images/empath/interactionDiagram.png" width="100%" alt="an interaction diagram I made">
+            <figure>
+                <img src="./images/empath/wireframes.png" width="100%" alt="initial sketches and high fidelity wireframes">
+                <figcaption>My initial sketches next to my Figma wireframes. I could easily import my Figma wireframes into Protopie with the Protopie plugin.</figcaption>
+            </figure>
+            <p>After coming up with and then tweaking our Figma designs after feedback, we imported them into Protopie to build our interactions, turning our wireframes into a working prototype. While everyone in the team worked on parts of the prototype, I mainly took the lead on complex features like the reader view, settings, and chapter quizzes</p>
+            <figure>
+                <img src="./images/empath/protopie.png" width="100%" alt="screenshot of my work in protopie">
+                <figcaption>One of my screens for the quiz game being worked on in Protopie</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Challenges</h2>
+            <p>Prototyping complex interactions such as Key Insights and the Quiz Game posed challenges we weren’t quite prepared for, especially since we were new to protopie.</p>
+            <p>For example, Key Insights must appear and disappear according to specific points in the text. I made this work by sending a command to increase the opacity of the insight to 100 at a certain scroll position of the container, and hide it at another position. This worked for when we had only one text size, but increasing the text size completely broke it, because it also increased the length of the scroll container!!</p>
+            <p>I remedied this by creating a variable to store the length of the container, and created another variable to divide that length by, that would change depending on the text size. With this, I could set off the Key Insights based on a proportion of the scroll container rather than a static pixel value!</p>
+            <div class="flexDiv">
+                <div>
+                    <img src="./images/empath/howIMadeIt.png" width="100%" alt="considerations when prototping complex features">
+                </div>
+                <div>
+                    <img src="./images/empath/empathScroll.gif" alt="my key insights feature in action" width="100%">
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Testing and Refinement</h2>
+            <p>With our now-working prototype, Echo and I conducted a mixture of in-person and online usability testing with 7 participants between the ages of 55 and 75. Through this, we found several areas where our app was lacking, then I made a priority matrix of changes we wanted to make in the next week.</p>
+            <figure>
+                <img src="./images/empath/coreInsights.png" width="100%" alt="core insights from testing">
+                <figcaption>A summary of our feedback from user testing, written by Shahvir.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/empath/priorityMatrix.png" width="100%" alt="priority matrix">
+                <figcaption>I plotted the changes we wanted to make to the app on a scale of difficulty versus value, to give us a better idea on how we should go about our improvements</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Final Solution and Reflection</h2>
+            <p>After another week of refinement, we brought our prototype to the final state that is in now. We revamped the onboarding, added accessibility options to the reader view like increasing text size, dark mode, and the ability to toggle key insights on or off, and redesigned interactions regarding the community page for better usability. In this project, I went from an absolute newbie at Protopie to gaining a sort of confidence using the software. I also built confidence in my presentation skills through the consistent weekly progress presentations, and learned how to conduct usability tests. While there are ways I would like to improve upon this project, like doing more research and conducting another round of tests, I’m proud of what my team and I accomplished given this short time frame.</p>
+        </section>
+
+        <section class="moreProjects">
+            <h2 class="yellowHeader">More Projects</h2>
+            <div class="moreProjectsDiv">
+                <a class="portfolioItemlink" href="turquoiseGoatCards.html">
+                    <div class="portfolioItem">
+                        <div class="portfolioItemImage" id="turquoiseGoatThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Research / Illustration</p>
+                            <p class="portfolioItemTitle">Turquoise Goat Trading Cards</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="portfolioItemlink" href="boundByFlame.html">
+                    <div class="portfolioItem">
+                        <div class="portfolioItemImage" id="bbfThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Graphic Design / Illustration</p>
+                            <p class="portfolioItemTitle">Bound by Flame: A TTRPG</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Thank you for visiting my portfolio</h2>
+            <a href="styleGuide.html" class="footerLink">Style Guide and Citations</a>
+            <a class="footerLink" href="https://github.com/taylorannliu/portfolio">Repository</a>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
+    </body>
+
+</html>

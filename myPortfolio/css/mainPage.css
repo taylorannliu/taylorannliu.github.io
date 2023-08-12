@@ -1,0 +1,174 @@
+
+body {
+    background-color: #2635BA;
+}
+
+h1 {
+    color: #FFFF54;
+}
+
+h2 {
+    color: #FFFF54;
+}
+
+h3 {
+    color: #FFFFFF;
+}
+
+h4 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+.introduction{
+    text-align: center;
+    margin-bottom: 20rem;
+    margin-top: 15vh;
+    padding: 2rem 0;
+}
+
+.introHeading{
+    font-size: 1.2rem;
+}
+
+.introBig{
+    font-family: 'LemonMilk';
+    font-size: 4rem;
+    font-weight: bold;
+    margin: .2rem;
+    color: #FFFF54;
+}
+
+.toProjectsButton{
+    margin-top: 3rem;
+    border-radius: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.introImage{
+    position: absolute;
+    /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-size: cover;
+    background-position: center;
+}
+
+.intro1{
+    background-image: url(../images/intro/introBbf.png);
+    height: 12rem;
+    width: 22rem;
+    top: 5vh;
+    left: 10vw;
+}
+
+.intro2{
+    background-image: url(../images/intro/introAquanow.png);
+    height: 16rem;
+    width: 10vw;
+    top: 10rem;
+    right: 0;
+}
+
+.intro3{
+    background-image: url(../images/intro/introEmpath.png);
+    height: 18rem;
+    width: 14rem;
+    top: 42rem;
+    right: 5vw;
+}
+
+.intro4{
+    background-image: url(../images/intro/introTg.png);
+    height: 12rem;
+    width: 20vw;
+    top: 35rem;
+    left: 0;
+}
+
+
+.centerHeading{
+    text-align: center;
+}
+
+@media screen and (max-width: 1015px) {
+    .introBig{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .introBig{
+        font-size: 6vw;
+    }
+    .introHeading{
+        font-size: 1rem;
+    }
+    .intro1{
+        top: 2vh;
+    }
+}
+@media screen and (max-width: 520px) {
+    .intro1{
+        left: -20vw;
+    }
+    .intro2 {
+        top: -3rem;
+    }
+    .intro3{
+        top: 33rem;
+    }
+    .intro4{
+        top: 33rem;
+    }
+}
+
+/* Portfolio Items */
+
+.portfolioItem {
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50rem;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    /*drop shadow learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+    filter: drop-shadow(0 .5rem 1rem rgba(0, 0, 0, 0.4));
+    transform: scale(1);
+    transition: transform 0.15s ease-out;
+}
+
+
+@media screen and (max-width: 1290px) {
+    .portfolioItem {
+        width: 40rem;
+    }
+    .portfolioItemText{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .portfolioItem {
+        flex-direction: column;
+        width: 100%;
+        height: 25rem;
+    }
+    .portfolioItemImage{
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .portfolioItemTitle{
+        margin-top: 0;
+    }
+
+    .portfolioItemText{
+        padding: 1rem 2rem;
+    }
+    .portfolioItemDescription{
+        display: none;
+    }
+}

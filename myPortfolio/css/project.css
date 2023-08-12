@@ -1,0 +1,131 @@
+body {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #2635BA;
+}
+
+h2 {
+    color: #2635BA;
+}
+
+h3 {
+    color: #2D2D2F;
+    margin-bottom: 0.3rem;
+}
+
+h4 {
+    color: #2D2D2F;
+}
+
+p {
+    color: #2D2D2F;
+    margin-top: 0;
+}
+
+.quoteText {
+    font-size: 1.25rem;
+    
+}
+
+.quoteAuthor {
+    color: #2635BA;
+}
+
+.imageSpan {
+    padding: 0; 
+    margin: 0;
+}
+
+.singleQuote {
+    margin: 2rem;
+}
+
+.blockItem{
+    background-color: #2635BA;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.blockItem p {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.0);
+    transition: transform 0.15s ease-out;
+}
+
+#backToTop:hover, .backToTop:focus {
+    transform: scale(1.1);
+    transition: transform 0.15s ease-out;
+}
+
+
+.moreProjects {
+    background-color: #2D2D2F;
+    margin-bottom: 0;
+    padding-top: 5rem;
+}
+
+.moreProjectsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.portfolioItem {
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 25rem;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    /*drop shadow learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+    filter: drop-shadow(0 .5rem 1rem rgba(0, 0, 0, 0.4));
+    transform: scale(1);
+    transition: transform 0.15s ease-out;
+}
+
+.portfolioItemImage {
+    /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-size: cover;
+    background-position: center;
+    flex: 1.8;
+    border-radius: .5rem .5rem 0 0 ;
+}
+
+.moreProjectsDiv a {
+    flex: 1 1 50%;
+}
+
+@media  screen and (max-width: 1050px) {
+    .moreProjectsDiv{
+        flex-direction: column;
+    }
+}
+
+.altColors {
+    background-color: #2D2D2F;
+}
+
+.altColors p, .altColors h3 {
+    color: #FFFFFF;
+}
+
+.altColors figcaption, .altColors h2 {
+    color: #FFFF54;
+}
+
+.belowDivider{
+    padding-top: 8rem;
+}

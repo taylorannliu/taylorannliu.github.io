@@ -1,0 +1,23 @@
+.sapphire {
+    display: inline-block;
+    color: #2635BA;
+    background-color: #FFFFFF;
+    padding: .3rem .5rem .3rem .5rem;
+    margin: 0;
+}
+
+.lemonJuice {
+    color: #FFFF54;
+}
+
+.aquamarine {
+    color: #48F0D2;
+}
+
+.slate {
+    color: #2D2D2F;
+}
+
+.greenGrey {
+    color: #588486;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects</title>
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/global.css" rel="stylesheet">
+        <link href="./css/mainPage.css" rel="stylesheet">
+        <link href="./css/animation.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="projects.html" class="headingChild"><img src="./images/navbarHome.svg" width="250rem" alt="homeLogo"></a>
+            <nav class="navChild">      
+                <a href="about.html">About</a>
+                <a href="internships.html">Internships</a>
+                <a class="activeNav" href="projects.html">Projects</a>           
+            </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <div class="introduction">
+            <p class="introHeading fadeIn">Hey There &#9996; My name is Taylor.</p>
+            <p class="introBig fadeIn">I Am A UX/UI Designer,</p>
+            <p class="introBig fadeIn">Illustrator, and</p>
+            <p class="introBig fadeIn">Creative Person</p>
+            <button onclick="scrollToProjects()" class="buttonSecondary toProjectsButton fadeIn" id="toProjects">Take me to the<br>Good Stuff</button>
+            <div class="introImage intro1"></div>
+            <div class="introImage intro2"></div>
+            <div class="introImage intro3"></div>
+            <div class="introImage intro4"></div>
+        </div>
+        <a id="projects"></a>
+        <section>
+            <h1 class="centerHeading">My Projects</h1>
+            <a class="portfolioItemlink" href="turquoiseGoatCards.html">
+                <div class="portfolioItem">
+                    <div class="portfolioItemImage" id="turquoiseGoatThumbnail"></div>
+                    <div class="portfolioItemText">
+                        <p class="portfolioItemCategory">Research / Illustration</p>
+                        <p class="portfolioItemTitle">Turquoise Goat Trading Cards</p>
+                        <p class="portfolioItemDescription">Enhance Turquoise Goat’s appeal as a destination where people can make memories with friends and preserve the unique experience they built together</p>
+
+                    </div>
+                </div>
+            </a>
+            <a class="portfolioItemlink" href="empathApp.html">
+                <div class="portfolioItem">
+                    <div class="portfolioItemImage" id="empathThumbnail"></div>
+                    <div class="portfolioItemText">
+                        <p class="portfolioItemCategory">Research / UX / UI / Prototyping</p>
+                        <p class="portfolioItemTitle">Empath: Daily Reading and Community</p>
+                        <p class="portfolioItemDescription">Reduce cognitive decline in seniors by fostering intellectual stimulation and sense of community as part of their daily interactions</p>
+
+                    </div>
+                </div>
+            </a>
+            <a class="portfolioItemlink" href="boundByFlame.html">
+                <div class="portfolioItem">
+                    <div class="portfolioItemImage" id="bbfThumbnail"></div>
+                    <div class="portfolioItemText">
+                        <p class="portfolioItemCategory">Graphic Design / Illustration</p>
+                        <p class="portfolioItemTitle">Bound by Flame: A TTRPG</p>
+                        <p class="portfolioItemDescription">Designing characters, locations, and page layouts for a collaborative, fantasy role-playing game</p>
+
+                    </div>
+                </div>
+            </a>
+                
+        </section>
+
+        <footer>
+            <h2>Thank you for visiting my portfolio</h2>
+            <a href="styleGuide.html" class="footerLink">Style Guide and Citations</a>
+            <a class="footerLink" href="https://github.com/taylorannliu/portfolio">Repository</a>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
+        
+    </body>
+
+</html>

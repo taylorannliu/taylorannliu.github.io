@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio Style Guide</title>
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/global.css" rel="stylesheet">
+        <link href="./css/mainPage.css" rel="stylesheet">
+        <link href="./css/styleGuide.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="styleGuide.html" class="headingChild"><img src="./images/navbarHomeStyleGuide.svg" width="250rem" alt="homeLogo"></a>
+            <nav class="navChild">      
+                <a href="citations.html">Citations</a>
+                <a class="activeNav" href="styleGuide.html">Style Guide</a>           
+            </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <div class="mainContainer">
+            <section class="headerSection dividerTop imageInHeader">
+                <div class="imgChild">
+                    <img src="./images/blackbgFish.svg" alt="my fish logo" width="100%">
+                </div>
+                <div class="textChild">
+                    <h1>Welcome to the Style Guide</h1>
+                    <p>Here is the Style Guide of my portfolio, detailing the type, colours, and element styles used on my portfolio. <a class="hyperlink" href="/projects.html">Return to the main portfolio here</a>. All code and visuals are done by me. All coding references I used are cited within the code, which you can view on my <a class="hyperlink" href="https://github.com/taylorannliu/portfolio">repository</a>. Enjoy!</p>
+                </div>
+                
+            </section>
+            
+            <section class="dividerBottom">
+                <h2>Fonts</h2>
+                <h3>Headings (Lemon Milk)</h3>
+                <p>Body copy (DM Sans)</p>
+            </section>
+
+            <section>
+                <h1>H1 Gargantuan Headings</h1>
+                <h2>H2 Huge Headings</h2>
+                <h3>H3 Big Headings</h3>
+                <h4>H4 Base Headings</h4>
+            </section>
+
+            <section>
+                <h2>Colours</h2>
+                <span><h3 class="sapphire">Sapphire (#2635BA)</h3></span>
+                <p>The site's primary colour. Used as the background on main pages and the accent colour on project pages.</p>
+                <h3 class="lemonJuice">Lemon Juice (#FFFF54)</h3>
+                <p>The main accent colour. A bright yellows that stands out nicely.</p>
+                <h3 class="aquamarine">Aquamarine (#48F0D2)</h3>
+                <p>A secondary accent colour, mainly used to denote interactivity like hyperlinks and button hover states.</p>
+                <h3>Blanche (#FFFFFF)</h3>
+                <p>Basic white. used as the background for some elements and as paragraph text colour on blue pages.</p>
+                <h3 class="slate">Slate (#2D2D2F)</h3>
+                <p>A cool, dark grey used as the paragraph text colour on white pages.</p>
+                <h3 class="greenGrey">Green Grey (#588486)</h3>
+                <p>An understated greenish grey used for subheadings with less hierarchy.</p>
+            </section>
+
+            <section>
+                <h2>Buttons and Links</h2>
+                <h3>Hyperlinks</h3>
+                <p>Within a paragraph of text, this is what a <a class="hyperlink" href="https://www.hepper.com/wp-content/uploads/2022/12/scottish-fold-cats-unusual-sitting-position-on-a-couch_Mert-Akkas_Shutterstock.jpg">hyperlink</a> would look like. I hope you like this nice photograph.</p>
+                <h3>Main Button</h3>
+                <p>For actions like checking out my work, or viewing a prototype</p>
+                <a class="buttonMain">Click Me!</a>
+                <h3>Back to top Button</h3>
+                <p>Each project page is long. For better user freedom and control, I've included a button that takes you back to the top of the page. The button looks like this:</p>
+                <a><button><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button></a>
+
+            </section>
+
+            <section>
+                <h2>Site Elements</h2>
+                <h3>Navbar</h3>
+                <p>The main navigation for the site. The yellow highlighted link represents the current page/section.</p>
+                <nav class="navChild exampleBar">      
+                    <a href="about.html">About</a>
+                    <a href="internships.html">Internships</a>
+                    <a class="activeNav" href="projects.html">Projects</a>           
+                </nav>
+                <h3>Portfolio Item</h3>
+                <a class="portfolioItemlink" href="turquoiseGoatCards.html">
+                <div class="portfolioItem">
+                    <div class="portfolioItemImage" id="turquoiseGoatThumbnail"></div>
+                    <div class="portfolioItemText">
+                        <p class="portfolioItemCategory">Design Research / Illustration</p>
+                        <p class="portfolioItemTitle">Turquoise Goat Trading Cards</p>
+                        <p class="portfolioItemDescription">How might we enhance Turquoise Goat’s appeal as a destination where people can make memories with friends and preserve the unique experience they built together?</p>
+                    </div>
+                </div>
+                </a>
+            </section>
+
+        </div>
+
+        <footer>
+            <h2>Thank you for checking out my style guide and citations!</h2>
+            <a href="projects.html" class="footerLink">Back to Main Site</a>
+            <a class="footerLink" href="https://github.com/taylorannliu/portfolio">Repository</a>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
+    </body>
+
+</html>

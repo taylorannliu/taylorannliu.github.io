@@ -1,0 +1,45 @@
+/* 
+code from lab 
+*/
+
+@font-face {
+    font-family: 'LemonMilk';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    font-weight:900;
+    font-style: normal;
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/DMSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 900;
+    font-style: normal;
+    src: url(../fonts/DMSans-Bold.ttf);
+}

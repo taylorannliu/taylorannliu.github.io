@@ -1,0 +1,13 @@
+.fadeIn {
+    animation: fadeInOnLoad 2.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInOnLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

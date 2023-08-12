@@ -1,0 +1,288 @@
+body {
+    font-size: 16px;
+    font-family: 'DMSans';
+    font-weight: normal;
+}
+
+section {
+    padding: 2rem 20vw 2rem 20vw;
+    margin-bottom: 4rem;
+}
+
+.headerSection {
+    background-color: #2D2D2F;
+    padding-bottom: 17rem;
+    padding-top: 11rem;
+}
+
+.imageInHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.imgChild {
+    flex: 1;
+    align-self: center;
+}
+
+.textChild {
+    flex: 3.5;
+}
+
+/* divider code from this generator: https://css-generators.com/section-divider/*/
+.dividerTop {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 4rem));
+}
+.dividerBottom {
+clip-path: polygon(0 0,100% 4rem,100% 100%,0 100%);
+margin-top: calc(0px - 4rem);
+}
+
+footer {
+    background-color: #2D2D2F;
+    align-items: center;
+    padding: 4rem 20vw 4rem 20vw;
+}
+
+footer h2 {
+    color: #FFFF54;
+    text-align: center;
+}
+
+.footerLink {
+    font-family: 'LemonMilk';
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.footerLink:hover, .footerLink:focus, .footerLink:active {
+    color: #48F0D2;
+    transition: color 0.3s ease-in;
+}
+
+
+
+/* Text Elements */
+h1 {
+    font-family: 'LemonMilk';
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'LemonMilk';
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'LemonMilk';
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: 900;
+}
+
+.yellowHeader {
+    color: #FFFF54;
+    text-align: center;
+}
+
+p{
+    line-height: 140%;
+}
+
+figcaption{
+    color: #2635BA;
+    margin-bottom: 2.5rem;
+    margin-top: .5rem;
+}
+
+/* Interactive Elements */
+#backToTop{
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hyperlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: #48F0D2;
+}
+
+.hyperlink:hover, .hyperlink:focus, .hyperlink:active {
+    color: #FFFF54;
+    transition: color 0.3s ease-in;
+}
+
+button {
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.buttonMain {
+    display: inline-block;
+    font-family: 'LemonMilk';
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #FFFF54;
+    color: #2635BA;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1.3rem;
+    margin-top: 1rem;
+}
+
+.buttonSecondary{
+    display: inline-block;
+    font-family: 'LemonMilk';
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color:#48F0D2;
+    color: #2635BA;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1.3rem;
+    margin-top: 1rem;
+}
+
+.buttonMain:hover, .buttonMain:focus, .buttonMain:active {
+    background-color: #48F0D2;
+    transition: background-color 0.2s ease-in;
+}
+
+.buttonSecondary:hover, .buttonSecondary:focus, .buttonSecondary:active{
+    background-color: #FFFF54;
+    transition: background-color 0.2s ease-in;
+}
+
+/*portfolio item related*/
+
+.portfolioItem:hover, .portfolioItem:focus, .portfolioItem:active {
+    transform: scale(1.03);
+    transition: transform 0.15s ease-out;
+}
+
+.portfolioItemImage {
+    /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-size: cover;
+    background-position: center;
+    flex: 1.8;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+/* Thumbnail background images */
+#turquoiseGoatThumbnail {
+    background-image: url(../images/tgThumbnail.png);
+}
+
+#empathThumbnail {
+    background-image: url(../images/empathThumbnail.png);
+}
+
+#aquanowThumbnail {
+    background-image: url(../images/aquanowThumbnail.png);
+}
+
+#bbfThumbnail {
+    background-image: url(../images/bbfThumbnail.png);
+}
+
+.portfolioItemText {
+    flex: 1;
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+.portfolioItemCategory {
+    color: #588486;
+}
+
+.portfolioItemTitle {
+    font-family: 'LemonMilk';
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #2635BA;
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+}
+
+.portfolioItemDescription {
+    color: #2D2D2F;
+    margin-top: .4rem;
+}
+
+/* flexity flex parts */
+.flexSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.flexImageSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media  screen and (max-width: 1050px) {
+    .flexImageSection{
+        flex-direction: column;
+    }
+}
+
+.flexImage {
+    flex: 1 1 50%;
+}
+
+.flexInfo {
+    flex: 3 5 50%;
+}
+
+
+@media  screen and (max-width: 710px) {
+    .flexSection {
+        flex-direction: column;
+    }
+    .flexDiv {
+        flex-direction: column;
+    }
+    section {
+        padding-right: 10vw;
+        padding-left: 10vw;
+        margin-bottom: 2rem;
+    }
+}
+
+.flexSection {
+    flex: 1;
+}
+
+.infoSection {
+    padding: 2rem 10vw 2rem 10vw;
+    margin-bottom: 2rem;
+}
+
+.projectSubHeader {
+    color: #588486;
+    margin-bottom: 0;
+}

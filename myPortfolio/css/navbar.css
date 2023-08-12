@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem 3rem 1.2rem 3rem;
+    background-color: #2635BA;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.headingChild {
+    flex: 1;
+}
+
+.navChild {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.navChild a:not(.activeNav) {
+    font-family: 'LemonMilk';
+    font-weight: bold;
+    color: #FFFF54;
+    align-self: center;
+}
+
+.navChild a:hover, .navChild a:active, .navChild a:focus {
+    color: #48F0D2;
+    transition: color 0.2s ease-in;
+}
+
+.activeNav {
+    color: #2635BA;
+    font-family: 'LemonMilk';
+    font-weight: bold;
+    background-color: #FFFF54;
+    padding: .35rem .8rem .35rem .8rem;
+    border-radius: 1.3rem;
+    align-self: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:hover, .hamburger:active {
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color:#FFFF54;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 710px) {
+    header{
+        padding: .6rem 1rem .6rem 1rem;
+    }
+    
+    .navChild:not(.exampleBar) {
+        display: none;
+        flex: 6;
+    }
+
+    .headingChild {
+        flex: 1;
+    }
+
+    .navChild.active {
+        display: flex;
+        flex-direction: column-reverse;
+        position: fixed;
+        right: 5%;
+        top: 10%;
+        padding: 1.5rem 1rem;
+        background-color:#2635BA;
+        border-radius: .5rem;
+    }
+
+    .navChild:not(.exampleBar) a{
+        font-size: 1.8rem;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: center;
+    }
+}
