@@ -43,7 +43,8 @@ margin-top: calc(0px - 4rem);
 footer {
     background-color: #2D2D2F;
     align-items: center;
-    padding: 4rem 20vw 4rem 20vw;
+    padding: 4rem 0 4rem 0;
+    width: 100%;
 }
 
 footer h2 {
