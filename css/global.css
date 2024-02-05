@@ -195,6 +195,10 @@ button:hover {
     background-image: url(../images/bbfThumbnail.png);
 }
 
+#ubccpdThumbnail {
+    background-image: url(../images/ubccpdThumbnail.jpg);
+}
+
 .portfolioItemText {
     flex: 1;
     padding: 3rem 2rem 3rem 2rem;
@@ -225,6 +229,20 @@ button:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 2rem;
+}
+
+
+.flexFiguresSection {
+    gap: 0;
+}
+@media  screen and (max-width: 1300px) {
+    .flexFigureSection{
+        flex-direction: column;
+    }
+}
+
+.flexFigure {
+    margin: .5rem;
 }
 
 .flexDiv {

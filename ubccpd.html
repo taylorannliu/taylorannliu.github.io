@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UBC Design Internship</title>
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/global.css" rel="stylesheet">
+        <link href="./css/navbar.css" rel="stylesheet">
+        <link href="./css/project.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="headingChild"><img src="./images/navbarHome.svg" width="250rem" alt="homeLogo"></a>
+            <nav class="navChild">      
+                <a href="about.html">About</a>
+                <a class="activeNav" href="internships.html">Internships</a>
+                <a href="index.html">Projects</a>           
+            </nav>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <button id="backToTop" onclick="scrollToTop()"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button>
+
+        <section id="banner" class="imageSpan">
+            <img src="./images/ubccpd/cpdBanner.jpg" alt="layout of personas" width="100%">
+        </section>
+
+        <section class="infoSection flexSection">
+            <div class="headingsDiv">
+                <p class="projectSubHeader">Co-Op Work Experience | September-December 2023</p>
+                <h1>Design Intern at UBC CPD</h1>
+            </div>
+            <div class="infoDiv">
+                <p>UBC Continuing Professional Development is a department of the University of British Columbia Faculty of medicine. CPD provides learning opportunities for post-graduate health-care professionals in Canada through online courses, accreditation, conferences, and evaluation.</p>
+                <p>From September to December 2023, I was the Design Intern for Creative Learning at UBC CPD. My contributions include creating original interactive activities and content for upcoming courses, developing and maintaining e-learning websites through HTML, CSS, and JavaScript, and designing informational resources for health-care providers across Canada to use in their practice.</p>
+                <p>Below is a showcase of a few of my contributions to UBC CPD. Please note that since most of the projects I’ve worked on during my internship are for currently unreleased courses, I can’t share images of some of my designs until their respective courses have launched.</p>
+            </div>
+        </section>
+
+       <section class="flexImageSection">
+        <div class="flexInfo">
+            <h2>Online Course Templates</h2>
+            <p>I designed and implemented several web templates for UBC CPD courses. This is a multiple-choice quiz activity I designed, prototyped, and implemented. I paid attention to the affordances of the different button states, as well as providing feedback for every action users can take.</p>
+        </div>
+        <div class="flexImage">
+            <img src="./images/ubccpd/webTemplates.jpg" alt="a template for quizzes I made, now in use for online courses" width="100%">
+            <figcaption>A quiz activity I made for the Midwifery Emergency Skills Program. ©UBC CPD.</figcaption>
+        </div>
+       </section>
+
+       <div class="altColors dividerBottom belowDivider">
+        <section class="flexImageSection altColors">
+            <div class="flexInfo">
+                <h2>E-Learning User Personas</h2>
+                <p>During my time at UBC CPD, we were planning a redesign of the Moodle system we use to host our courses. My role in this was to organize the qualitative and quantitative data my supervisor compiled and wrote from user interviews into user personas that represent segments of UBC CPD’s audience.</p>
+                <p>I designed and illustrated this set of 3 personas in a way that organizes information for quick reading and matches UBC CPD style guidelines.I designed and illustrated this set of 3 personas in a way that organizes information for quick reading and matches UBC CPD style guidelines.</p>
+            </div>
+            <div class="flexImage">
+                <img src="./images/ubccpdThumbnail.jpg" alt="personas thumbnail thumbnail" width="100%">
+            </div>
+        </section>
+        <section class="flexSection flexFigureSection">
+            <figure class="flexFigure">
+                <img src="./images/ubccpd/imani.jpg" alt="persona for Imani" width="100%">
+                <figcaption>Persona for Imani, an international physician. ©UBC CPD.</figcaption>
+            </figure>
+            <figure class="flexFigure">
+                <img src="./images/ubccpd/carl.jpg" alt="persona for Carl" width="100%">
+                <figcaption>Persona for Carl, a rural medical resident. ©UBC CPD.</figcaption>
+            </figure>
+            <figure class="flexFigure">
+                <img src="./images/ubccpd/edith.jpg" alt="persona for Edith" width="100%">
+                <figcaption>Persona for Edith, a francophone learner new to e-learning. ©UBC CPD.</figcaption>
+            </figure>
+        </section>
+       </div>
+
+       <section class="flexImageSection">
+        <div class="flexInfo">
+            <h2>TCMP: Guide for Palliative Serious Illness Conversations</h2>
+            <p><a class="hyperlink" target="_blank" href="https://thischangedmypractice.com/">TCMP (This Changed My Practice)</a> is a free online blog by UBC CPD (Continuing Professional Development) of the Faculty of Medicine. Launched in 2010, the blog provides its audience of health-care professionals tips, impactful clinical studies, and clinical pearls in bite-sized articles every two weeks.</p>
+            <p>This article I was tasked to produce a visual for was about how health-care providers can speak to patients and their families about serious illnesses they have in a palliative and empathetic way. My objective for this project was to design and develop a visual resource that not only expresses the article’s content, but is a practical tool to help health-care providers improve their practice. <a target="_blank" class="hyperlink" href="https://thischangedmypractice.com/palliative-care-conversations/">The finished resource and its accompanying article can be viewed here:</a></p>
+        </div>
+        <div class="flexImage">
+            <img src="./images/ubccpd/palliativeBanner.jpg" alt="thumbnail of my article resource on the front page of the site" width="100%">
+            <figcaption>The resource I made, as it appears on the front-page of UBC CPD This Changed My Practice. ©UBC CPD.</figcaption>
+        </div>
+       </section>
+       <section>
+            <figure>
+                <img src="./images/ubccpd/palliativeDraft.jpg" alt="initial sketch beside wireframe" width="100%">
+                <figcaption>Initial sketch of the guide (left) and a wireframe with content (right). ©UBC CPD TCMP</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/ubccpd/palliativePDF.png" alt="final resource, split into two printable pages" width="100%">
+                <figcaption>The final resource I designed and illustrated, split into two letter-sized pages for easy printing. ©UBC CPD TCMP.</figcaption>
+            </figure>
+        </section>
+
+       <div class="altColors dividerBottom belowDivider">
+        <section class="flexImageSection altColors">
+            <div class="flexInfo">
+                <h2>Midwifery Course Book</h2>
+                <p>One of my largest undertakings was designing and typesetting a 300+ page book for a midwifery emergency skills book.</p>
+                <p>This project required lots of planning, as while the information was already written for me, I had to figure out how to organize and present the course. I developed a system of page backgrounds, text styling, and different kinds of info boxes that help group like information for easy comprehension.</p>
+                <p>While the course book has not been released yet, the online version of the course— which I also contributed to— is <a href="https://ubccpd.ca/learn/learning-activities/course?eventtemplate=32-midwifery-emergency-skills-program-mesp" class="hyperlink" target="_blank">available here for reference</a></p>
+            </div>
+            <div class="flexImage">
+                <img src="./images/ubccpd/mespPDF.jpg" alt="image coming soon" width="100%">
+            </div>
+        </section>
+       </div>
+       
+       <section class="flexImageSection">
+        <div class="flexInfo">
+            <h2>Abortion Access Infographic</h2>
+            <p>For a to-be-released course and national campaign about increasing abortion access, I developed and designed an infographic that details important statistics about abortions people may not know. </p>
+            <p>The aim for it is to help normalize abortion and inform people of their options in accessing abortion care. This will be a downloadable digital resource as well as a poster health-care providers can show to their patients.</p>
+        </div>
+        <div class="flexImage">
+            <img src="./images/ubccpd/abortionInfographic.jpg" alt="image coming soon" width="100%">
+        </div>
+       </section>
+
+       <div class="altColors dividerBottom belowDivider">
+        <section class="altColors" style="margin-bottom: 0;">
+            <h2>Takeaways from my Internship Experience</h2>
+            <p>I loved my time at UBC CPD. Throughout my internship, I learned a lot about designing user-facing experiences, working in both web and print, as well as strategically organizing information to aid in education.</p>
+            <p>Having no prior experience in the field of medicine, I am extremely proud of myself for creating these learning experiences for people who, like me, are eager to learn new things to better themselves.</p>
+        </section>
+       </div>
+       
+
+        <footer>
+            <h2>Thank you for visiting my portfolio</h2>
+            <a href="styleGuide.html" class="footerLink">Style Guide and Citations</a>
+            <a class="footerLink" href="https://github.com/taylorannliu/portfolio">Repository</a>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
+    </body>
+</html>
